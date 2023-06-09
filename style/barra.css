@@ -1,0 +1,83 @@
+.sidebar {
+    background-color: #160025;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: -160px;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .toggle-button {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    transform: translateY(-50%);
+  }
+  
+  .toggle-button::before,
+  .toggle-button::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .toggle-button::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .toggle-button::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .sidebar.open {
+      left: 0;
+      width: 200px;
+    }
+  
+    .toggle-button {
+      right: -200px;
+    }
+  
+    .menu {
+      margin-top: 0;
+    }
+  
+    .toggle-button::before,
+    .toggle-button::after {
+      background-color: #333;
+    }
+  }
+  
