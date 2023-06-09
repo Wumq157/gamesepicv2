@@ -1,0 +1,68 @@
+
+<script src="js/html.js"></script>
+<script>
+var meuConteudo = `
+<link rel="stylesheet" href="style/contato.css">
+
+<ul>
+  <li>
+    <div class="rede">
+      <h1>Redes Sociais.</h1>
+      <ul class="produtos">
+        <h2>GitHub</h2>
+        <li><a href="https://github.com/Wumq157" class="btn">GitHub</a></li>
+        <h2>Instagram</h2>
+        <li><a href="https://www.instagram.com/otaviopech/" class="btn">Instagram</a></li>
+      </ul>
+    </div>
+  </li>
+  <li class="form">
+    <div class="contato">
+      <h2>Contato</h2>
+      <form id="myForm">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" class="ip" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" class="ip" required placeholder="seuEmail@gmail.com">
+
+        <label for="fone">Telefone</label>
+        <input type="number" id="fone" class="ip" placeholder="(XX) XXXXX-XXXX">
+
+        <label for="msm">Mensagem que desejam enviar.</label>
+        <textarea cols="70" lang="60" id="msm"></textarea>
+        <div>
+          <p>Como prefere ser contatado?</p>
+          <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+          <label for="radio-fone"><input type="radio" name="contato" value="email" id="radio-fone">Telefone</label>
+
+          <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+              checked>Whatsapp</label>
+        </div>
+        <p> Qual o horário que prefere ser atendido</p>
+        <select name="horario">
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+          <option>Qualquer horário.</option>
+        </select>
+
+        <label><input type="checkbox" class="checkbox" id="novidades" checked> Gostaria de receber nossas novidades
+          em seu Email?</label>
+        <button class="enviar" type="submit">Enviar Formulário</button>
+
+      </form>
+    </div>
+  </li>
+</ul>
+
+
+<script src="contato/contato.js">
+
+  `;
+
+adicionarConteudoPrincipal(meuConteudo);
+
+</script>
+<script src="../js/script.js"></script>

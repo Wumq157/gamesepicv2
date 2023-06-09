@@ -1,0 +1,47 @@
+.tabela {
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #252525;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #CCCCCC;
+    font-weight: bold;
+  }
+  
+  .abaixo-peso {
+    background-color: #F0F0F0;
+  }
+  
+  .normal {
+    background-color: #E5E5E5;
+  }
+  
+  .sobrepeso {
+    background-color: #DCDCDC;
+  }
+  
+  .obesidade-1 {
+    background-color: #D3D3D3;
+  }
+  
+  .obesidade-2 {
+    background-color: #C9C9C9;
+  }
+  
+  .obesidade-3 {
+    background-color: #BEBEBE;
+  }
+  
