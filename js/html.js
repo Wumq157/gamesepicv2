@@ -29,7 +29,8 @@ function adicionarConteudoPrincipal(conteudo) {
                     <li><a class="btn" href="imc.html">Saúde</a></li>
                     <li><a class="btn" href="jogos.html">Jogos</a></li>
                     <li><a class="btn" href="luan.html">Academia</a></li>
-                    <li><a class="btn" href="suporte.html">OSuporte</a></li>
+                    <li><a class="btn" href="suporte.html">Suporte</a></li>
+                    <li><a class="btn" href="https://wumq157.github.io/GamesEpic/">GamesEpic<br>1.0</a></li>
                     <!-- Adicione mais opções conforme necessário -->
                 </ul>
                 </div>
