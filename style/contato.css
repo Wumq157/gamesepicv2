@@ -21,18 +21,23 @@ main li {
     border-style: solid;
     border-radius: 20px;
 }
+
 h2 {
     font-size: 30px;
 }
+
 .form {
     margin: 0 auto;
 
 }
+
 form {
     margin: auto 0;
-    
+
 }
-form label, form p {
+
+form label,
+form p {
     display: block;
     margin: 0 0 10px;
     font-size: 20px;
@@ -40,20 +45,32 @@ form label, form p {
     text-decoration-color: blueviolet;
 
 }
-.ip, form textarea {
-   /* display: block; */
+
+.input,
+form textarea {
+    color: #8707ff;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    background: transparent;
     margin: 10px;
     padding: 5px 10px;
     width: 85%;
 }
+
+.input,
+form textarea :active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+
 .checkbox {
-	margin: 20px 0;
+    margin: 20px 0;
 
 }
+
 .enviar {
     margin: auto;
     text-align: center;
-    width:40%;
+    width: 40%;
     padding: 15px 0;
     background: #333;
     color: rgb(0, 204, 255);
@@ -64,6 +81,7 @@ form label, form p {
     transition: 2s all;
     cursor: pointer;
 }
+
 .enviar:hover {
     background: #00ccff;
     color: #333;
