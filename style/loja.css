@@ -8,24 +8,29 @@ main {
     margin: 0 auto;
     padding: 50px 0;
 }
+.produtos ul {
+    display: flex;
+    flex-direction: column;
+}
+.produtos li img {
+    width: 100%;
 
+}
 .produtos li {
-display: inline-block;
-text-align: center;
-width: 30%;
-height: 545px;
-vertical-align: top;
-margin: 0 1.5%;
-padding: 30px 15px;
-box-sizing: border-box;
-border-color: rgb(1, 1, 1);
-border-width: 2px;
-border-style: solid;
-border-radius: 20px;
-background: linear-gradient(145deg, #7500ae, #620093);
-box-shadow:  7px 7px 14px #3f005f,
-             -7px -7px 14px #9b00e7;
-
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 545px;
+    vertical-align: top;
+    margin: 2px 1%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    border-color: rgb(1, 1, 1);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #7500ae, #620093);
+    box-shadow: 7px 7px 14px #3f005f, -7px -7px 14px #9b00e7;
 }
 .produtos a {
     text-decoration: none;
