@@ -1,4 +1,4 @@
-window.alert("Olá")
+
 var peso = Number(window.prompt("Diga qual o seu peso:"));
 var altura = Number(window.prompt("Diga qual a sua altura:"));
 var altura2 = altura ** 2;
