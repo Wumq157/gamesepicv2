@@ -13,7 +13,7 @@ main li {
     width: 45%;
     vertical-align: top;
     margin: 0 1.5%;
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(197, 139, 209);
     padding: 30px 15px;
     box-sizing: border-box;
     border-color: rgb(1, 1, 1);
@@ -56,7 +56,7 @@ form label, form p {
     width:40%;
     padding: 15px 0;
     background: #333;
-    color: white;
+    color: rgb(0, 204, 255);
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -65,7 +65,7 @@ form label, form p {
     cursor: pointer;
 }
 .enviar:hover {
-    background: #fff;
+    background: #00ccff;
     color: #333;
     transform: rotate(360deg) scale(1.2);
 }
