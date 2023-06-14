@@ -9,6 +9,18 @@ var meuConteudo = `
     
 
 </div>
+<div class="imcForm">
+  <form id="imcForm">
+    <label for="altura">Altura</label>
+    <input type="text" id="altura" class="input" required>
+
+    <label for="peso">Peso</label>
+    <input type="text" id="peso" class="input" required>
+
+    <button class="enviar" id="submit-button" type="submit">Calcular</button>
+
+</form>
+  </div>
 <div class="tabela">
     <table>
       <thead>
@@ -45,7 +57,7 @@ var meuConteudo = `
       </tbody>
     </table>
   </div>
-  <p>Seu IMC é de <span id="imcValue"></span>, com base nesse valor você deve procurar a ajuda correta.</p>
+  <p><span id="imcValue"></span></p>
   
 `;
 
