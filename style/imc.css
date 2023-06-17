@@ -23,26 +23,32 @@
   
   .abaixo-peso {
     background-color: #F0F0F0;
+    color: #171717;
   }
   
   .normal {
     background-color: #E5E5E5;
+    color: #171717;
   }
   
   .sobrepeso {
     background-color: #DCDCDC;
+    color: #171717;
   }
   
   .obesidade-1 {
     background-color: #D3D3D3;
+    color: #171717;
   }
   
   .obesidade-2 {
     background-color: #C9C9C9;
+    color: #171717;
   }
   
   .obesidade-3 {
     background-color: #BEBEBE;
+    color: #171717;
   }
   
 
