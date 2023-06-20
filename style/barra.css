@@ -22,7 +22,7 @@
   position: absolute;
   cursor: pointer;
   inset: 0;
-  background: #d4acfb;
+  background: #00BFFF;
   border-radius: 50px;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
 }
