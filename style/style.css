@@ -1,5 +1,5 @@
 body {
-  background-color: #778899;
+  background-color: #010c34;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
   header {
     width: 98%;
     height: 100px;
-    background-color: #00BFFF;
+    background-color: #202020;
     padding: 10px;
     color:aliceblue;
 
@@ -22,7 +22,7 @@ body {
   }
   
   main {
-    background-color: 	#B0C4DE;
+    background-color: 	#ccc;
     flex-grow: 1;
     padding: 20px;
     padding-left: 50px;
@@ -45,6 +45,6 @@ body {
     margin: auto;
     width: 97%;
     height: 50px;
-    background-color: #778899;
+    background-color: #010c34;
     color:aliceblue;
   }

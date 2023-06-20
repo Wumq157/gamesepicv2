@@ -8,7 +8,7 @@ function adicionarConteudoPrincipal(conteudo) {
           <link rel="stylesheet" type="text/css" href="style/reset.css">
           <link rel="stylesheet" type="text/css" href="style/style.css">
           <link rel="stylesheet" type="text/css" href="style/barra.css">
-          <title>Document</title>
+          <link rel="shortcut icon" href="https://i.imgur.com/7KwrsKR.png">
       </head>
       <body>
           <header>

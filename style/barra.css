@@ -22,7 +22,7 @@
   position: absolute;
   cursor: pointer;
   inset: 0;
-  background: #00BFFF;
+  background: #d4acfb;
   border-radius: 50px;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
 }
@@ -58,8 +58,8 @@
 /* Rest of the CSS styles */
 
 .sidebar {
-  background-color: #460075;
-  color: #fff;
+  background-color: #8b8b8b;
+  color: #000;
   width: 200px;
   height: 100%;
   position: fixed;
