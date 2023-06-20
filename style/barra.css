@@ -59,7 +59,7 @@
 
 .sidebar {
   background-color: #8b8b8b;
-  color: #000;
+  color: #000
   width: 200px;
   height: 100%;
   position: fixed;
@@ -158,7 +158,7 @@ a.btn {
   font-weight: 600;
   letter-spacing: 2px;
   background: transparent;
-  color: #fff;
+  color: #000;
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
   transition: all 0.2s ease-in;
