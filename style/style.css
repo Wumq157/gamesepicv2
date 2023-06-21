@@ -1,52 +1,274 @@
+
+/* Corpo da pagina*/
 body {
-  white: 100%;
-  background-color: #010c34;
-    margin: 0;
-    padding: 0;
+  background-color: rgb(51, 51, 51);
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  max-height: 1px;
+}
+
+header {
+    background-color: rgb(17, 17, 17);
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color:aliceblue;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
   
-  header {
-    white: 100%;
-    height: 100px;
-    background-color: #202020;
-    padding: 10px;
-    color:aliceblue;
-
+  header .div1 {
+    display: flex;
+    align-items: flex-start;
+    padding:  20px;
   }
-  header, p{
-    font-size: 30px;
-    text-align: center;
+  header .div1 button {
+    margin:  20px;
+  }
+  header img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    border-style: solid;
+    border-color: black;
+  }
+  header a, header p, header h1, header h2, header h3, header h4, header h5, header h6 {
+    color: #fff;
+  }
+  header div {
+    width: 33%;
+    display: inline;
+  }
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
   }
   
-  main {
-    white: 100%;
-    background-color: 	#ccc;
-    flex-grow: 1;
-    padding: 20px;
-    padding-left: 50px;
-    color: rgba(0, 34, 56, 0.815);
-  }
-  main, h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  main, p{
-    font-size: 20px;
-    text-align: center;
+  header li {
+    margin: 15px;
+    flex: 1 0 auto;
   }
 
-  footer {
-    padding: auto;
-    text-align: center;
-    padding-left: 50px;
-    padding-top: 15px;
-    margin: auto;
-    white: 100%;
-    height: 50px;
-    background-color: #010c34;
-    color:aliceblue;
+.sHeader {
+    display: flex;
+    flex-direction: column; /* Adicione essa linha */
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    padding-left: 10%;
   }
+  
+  .sHeader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  .sHeader h2, .sHeader p {
+    display: block;
+    text-align: left;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .sHeader h2 {
+    margin: 10px;
+    font-size: 60px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .sHeader p {
+    font-size: 30px;
+    margin: 10px;
+  }
+  
+
+main {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+}
+main a, main p, main h1, main h2, main h3, main h4, main h5, main h6 {
+  color: #fff;
+}
+.sMain{
+    background-color: rgb(34, 34, 34);
+}
+
+footer {
+   max-height: 100px;
+    padding: 15px;
+    background-color: rgb(90, 136, 185);
+    color: rgb(17, 24, 39);
+    padding: 50px;
+    display: flex;
+}
+footer a, footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: #000000;
+}
+.fTitulo {
+    width: 30%;
+}
+.fConteudo {
+    width: 70%;
+}
+
+.fConteudo ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .fConteudo li {
+    margin: 15px;
+    flex: 1 0 auto;
+  }
+
+/*Botão btn*/
+.btn {
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+
+.btn:focus:after,
+.btn:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.btn:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+/*Botão btn2*/
+.btn2 {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease;
+ }
+ 
+ .btn2:hover {
+  letter-spacing: 3px;
+  background-color: #474747;;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #474747 0px 7px 29px 0px;
+ }
+ 
+ .btn2:active {
+  letter-spacing: 3px;
+  background-color: #474747;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #474747 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+ }
+ /*Botão btn3*/                                                
+ .btn3-container {
+  display: flex;
+  flex-direction: column;
+}
+
+a.btn3 {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #000;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  margin-bottom: 100px;
+}
+
+a.btn3:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  transition: all 0.2s ease-out;
+}
+
+a.btn3:hover::before {
+  animation: sh02 0.5s 0s linear;
+}
+
+a.btn3::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+a.btn3:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}

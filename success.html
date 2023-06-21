@@ -1,11 +1,106 @@
-<title>Document</title>
-<script src="js/html.js"></script>
-<script>
-var meuConteudo = `
-<div>Teste</div>
-`;
-
-adicionarConteudoPrincipal(meuConteudo);
-
-</script>
-<script src="js/script.js"></script>
+<style>
+    .list-container {
+      display: flex;
+      justify-content: space-between;
+      overflow: scroll;
+      scroll-snap-type: x mandatory;
+      padding: 10px;
+    }
+  
+    .list-item {
+      flex: 1 0 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      scroll-snap-align: center;
+    }
+  
+    .list-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  
+    .radio-input {
+      display: flex;
+    }
+  
+    .radio-input > .input {
+      margin-right: 10px;
+      transform: scale(1.4);
+    }
+  </style>
+  
+  <div class="list-container">
+    <div class="list-item">
+      <img src="item1.jpg" alt="Item 1">
+      <p>Item 1 Text</p>
+    </div>
+    <div class="list-item">
+      <img src="item2.jpg" alt="Item 2">
+      <p>Item 2 Text</p>
+    </div>
+    <div class="list-item">
+      <img src="item3.jpg" alt="Item 3">
+      <p>Item 3 Text</p>
+    </div>
+    <div class="list-item">
+        <img src="item3.jpg" alt="Item 4">
+        <p>Item 3 Text</p>
+      </div>
+      <div class="list-item">
+        <img src="item3.jpg" alt="Item 5">
+        <p>Item 3 Text</p>
+      </div>
+      <div class="list-item">
+        <img src="item3.jpg" alt="Item 6">
+        <p>Item 3 Text</p>
+      </div>
+  </div>
+  
+  <div class="radio-input">
+    <input name="radio" type="radio" class="input" checked>
+    <input name="radio" type="radio" class="input">
+    <input name="radio" type="radio" class="input">
+    <input name="radio" type="radio" class="input">
+    <input name="radio" type="radio" class="input">
+    <input name="radio" type="radio" class="input">
+  </div>
+  
+  <script>
+    const listContainer = document.querySelector(".list-container");
+    const radioInputs = document.querySelectorAll(".input");
+    let selectedIndex = 0;
+  
+    function scrollToSelectedIndex() {
+      const selectedItem = document.querySelector(".selected-item");
+      listContainer.scrollLeft = selectedItem.offsetLeft - (listContainer.offsetWidth - selectedItem.offsetWidth) / 2;
+    }
+  
+    function selectItem(index) {
+      radioInputs[selectedIndex].checked = false;
+      selectedIndex = index;
+      radioInputs[selectedIndex].checked = true;
+      scrollToSelectedIndex();
+    }
+  
+    function handleItemClick(event) {
+      const item = event.target.closest(".list-item");
+      const index = Array.from(item.parentElement.children).indexOf(item);
+      selectItem(index);
+    }
+  
+    function handleRadioInputChange(event) {
+      const index = Array.from(radioInputs).indexOf(event.target);
+      selectItem(index);
+    }
+  
+    listContainer.addEventListener("click", handleItemClick);
+    radioInputs.forEach(input => input.addEventListener("change", handleRadioInputChange));
+  
+    selectItem(selectedIndex); // Set initial selected item
+  </script>
