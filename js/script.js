@@ -9,6 +9,7 @@ const yearElement = document.getElementById('year');
 const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;  
 
+
 /*const checkButton = () => {
     const verify = document.getElementById('submit-button');
     if (!verify) {

@@ -65,6 +65,7 @@ function adicionarConteudoPrincipal(conteudo) {
         <footer id="footer">
             <div class="fTitulo">
                 <h1>Games Epic V2</h1>
+                <span id="year"></span>
             </div>
             <div class="fConteudo">
                 <ul>
@@ -74,8 +75,7 @@ function adicionarConteudoPrincipal(conteudo) {
                 </ul>
             </div>
         </footer>
-        <script src="js/script.js"></script>
-        <script src="js/usuario.js"></script>
+        
     </body>
     </html>`;
   
