@@ -1,12 +1,12 @@
 <title>Jogos</title>
 <script src="js/html.js"></script>
 <script>
-var url = `https://cdn2.unrealengine.com/rl-playerschoice-bundle-3840x2160-723248b32611.jpg`
-var sHeader = `<h2>Olá <span class="nome"></span></h2>
+  var url = `https://cdn2.unrealengine.com/rl-playerschoice-bundle-3840x2160-723248b32611.jpg`
+  var sHeader = `<h2>Olá <span class="nome"></span></h2>
 
 `
 
-var meuConteudo = `
+  var meuConteudo = `
 <h2><b>GamesEpic Informações.</b></h2>
 <p>Somos uma empresa de Jogos e não só isso, um pouco mais<br> aqui nós vamos apresentar futuros jogos que serão
   criados pelo desenvolverdor: Wumq Wincheseter 👍</p>
@@ -22,8 +22,19 @@ var meuConteudo = `
 <p>Caso queira mais clique no botão <a href="luan.html"><b>AQUI</b></a></p>
 <section class="contato">
   <h1>Contato></h1>
+  <label for="nome">Nome</label>
+        <input type="text" id="nome" class="input" required>
 
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input" required placeholder="seuEmail@gmail.com">
 
+        <label for="fone">Telefone</label>
+        <input type="number" id="fone" class="input" placeholder="(XX) XXXXX-XXXX">
+
+        <label for="msm">Mensagem que desejam enviar.</label>
+        <textarea cols="70" lang="60" id="msm"></textarea>
+
+        <button class="enviar" id="submit-button" type="submit">Enviar Formulário</button>
 </section>
 
 <section class="mapa">
@@ -32,7 +43,7 @@ var meuConteudo = `
 </section>
           `;
 
-adicionarConteudoPrincipal(meuConteudo);
+  adicionarConteudoPrincipal(meuConteudo);
 
 </script>
 <script src="js/script.js"></script>

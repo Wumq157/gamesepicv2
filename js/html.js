@@ -28,9 +28,9 @@ function adicionarConteudoPrincipal(conteudo) {
             
             <div class="div3">
                 <ul>
-                    <li><a class="btn" href="#">Home</a></li>
-                    <li><a class="btn" href="#">Jogos</a></li>
-                    <li><a class="btn" href="#">Saúde</a></li>
+                    <li><a class="btn" href="index.html">Home</a></li>
+                    <li><a class="btn" href="https://luanbsoares.github.io/GYM/">GYM</a></li>
+                    <li><a class="btn" href="imc.html">Saúde</a></li>
                 </ul>
             </div>
         </header>
@@ -69,9 +69,9 @@ function adicionarConteudoPrincipal(conteudo) {
             </div>
             <div class="fConteudo">
                 <ul>
-                    <li><a class="btn" href="#">Home</a></li>
-                    <li><a class="btn" href="#">Jogos</a></li>
-                    <li><a class="btn" href="#">Saúde</a></li>
+                    <li><a class="btn" href="index.html">Home</a></li>
+                    <li><a class="btn" href="https://luanbsoares.github.io/GYM/">GYM</a></li>
+                    <li><a class="btn" href="imc.html">Saúde</a></li>
                 </ul>
             </div>
         </footer>
