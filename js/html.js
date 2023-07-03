@@ -47,7 +47,6 @@ function adicionarConteudoPrincipal(conteudo) {
                 <ul class="menu">
                     <li><a class="btn3" href="index.html">Home</a></li>
                     <li><a class="btn3" href="clips.html">Clips</a></li>
-                    <li><a class="btn3" href="contato.html">Contato</a></li>
                     <li><a class="btn3" href="loja.html">Loja</a></li>
                     <li><a class="btn3" href="imc.html">Saúde</a></li>
                     <li><a class="btn3" href="jogos.html">Jogos</a></li>
