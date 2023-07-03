@@ -1,0 +1,84 @@
+.contato {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+}
+
+.contato h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+
+.formulario label {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea,
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.formulario .preferencia,
+.formulario .horario {
+  grid-column: span 2;
+  text-align: left;
+}
+
+.formulario .preferencia h2,
+.formulario .horario p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.formulario .preferencia label,
+.formulario .horario select {
+  margin-right: 20px;
+}
+
+.formulario .novidades {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.formulario .checkbox {
+  margin-right: 5px;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+}

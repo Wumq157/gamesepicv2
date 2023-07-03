@@ -1,4 +1,5 @@
 <title>Jogos</title>
+<link rel="stylesheet" href="style/contatoindex.css">
 <script src="js/html.js"></script>
 <script>
   var url = `https://cdn2.unrealengine.com/rl-playerschoice-bundle-3840x2160-723248b32611.jpg`
@@ -9,42 +10,81 @@
   var meuConteudo = `
 <h2><b>GamesEpic Informações.</b></h2>
 <p>Somos uma empresa de Jogos e não só isso, um pouco mais<br> aqui nós vamos apresentar futuros jogos que serão
-  criados pelo desenvolverdor: Wumq Wincheseter 👍</p>
+criados pelo desenvolverdor: Wumq Wincheseter 👍</p>
 <img src="https://i.imgur.com/EVCieXG.png">
-
 <ul>
-  <h3>Aqui você pode tirar algumas dúvidas.</h3>
-  <li>Nós vamos dar jogos de graça todas as semans?!?! <br>não.</li>
-  <li>Quais são os metodos de pagamentos aceitados?<br> Cartão, Pix, Boleto, Boque.....</li>
-  <li>Nós realmente vamos vender jogos?<br> Não, faz o L</li>
+<h3>Aqui você pode tirar algumas dúvidas.</h3>
+<li>Nós vamos dar jogos de graça todas as semans?!?! <br>não.</li>
+<li>Quais são os metodos de pagamentos aceitados?<br> Cartão, Pix, Boleto, Boque.....</li>
+<li>Nós realmente vamos vender jogos?<br> Não, faz o L</li>
 </ul>
+
+<section class="contato">
+  <h1>Contato</h1>
+  <div class="formulario">
+    <form id="myForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" class="input" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" class="input" required placeholder="seuEmail@gmail.com">
+
+      <label for="fone">Telefone:</label>
+      <input type="text" id="fone" class="input" placeholder="(XX) XXXXX-XXXX">
+
+      <label for="msm">Mensagem:</label>
+      <textarea id="msm" rows="6"></textarea>
+
+      <div class="preferencia">
+        <h2>Prefere ser atendido por onde?</h2>
+        <label for="radio-email">
+          <input type="radio" name="contato" value="email" id="radio-email"> Email
+        </label>
+
+        <label for="radio-fone">
+          <input type="radio" name="contato" value="telefone" id="radio-fone"> Telefone
+        </label>
+
+        <label for="radio-whatsapp">
+          <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp
+        </label>
+      </div>
+
+      <div class="horario">
+        <p>Qual o horário que prefere ser atendido?</p>
+        <select name="horario">
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+          <option>Qualquer horário</option>
+        </select>
+      </div>
+
+      <label class="novidades">
+        <input type="checkbox" class="checkbox" id="novidades" checked> Gostaria de receber nossas novidades em seu Email?
+      </label>
+
+      <button class="enviar" id="submit-button" type="submit">Enviar Formulário</button>
+    </form>
+  </div>
+</section>
+
 <h3>Informações sobre Academia.</h3>
 <p>Caso queira mais clique no botão <a href="luan.html"><b>AQUI</b></a></p>
-<section class="contato">
-  <h1>Contato></h1>
-  <label for="nome">Nome</label>
-        <input type="text" id="nome" class="input" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" class="input" required placeholder="seuEmail@gmail.com">
 
-        <label for="fone">Telefone</label>
-        <input type="number" id="fone" class="input" placeholder="(XX) XXXXX-XXXX">
+  
 
-        <label for="msm">Mensagem que desejam enviar.</label>
-        <textarea cols="70" lang="60" id="msm"></textarea>
-
-        <button class="enviar" id="submit-button" type="submit">Enviar Formulário</button>
-</section>
 
 <section class="mapa">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1282.950706111585!2d-54.07274893096117!3d-24.563901790465344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1688071222906!5m2!1spt-BR!2sbr"
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1282.950706111585!2d-54.07274893096117!3d-24.563901790465344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1688071222906!5m2!1spt-BR!2sbr"
 ></iframe>
 </section>
-          `;
+    `;
 
   adicionarConteudoPrincipal(meuConteudo);
 
 </script>
 <script src="js/script.js"></script>
+<script src="js/contato.js"></script>
 <script src="js/usuario.js"></script>
