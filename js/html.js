@@ -9,8 +9,8 @@ function adicionarConteudoPrincipal(conteudo) {
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="style/reset.css">
         <link rel="stylesheet" type="text/css" href="style/style.css">
-        <link rel="stylesheet" type="text/css" href="style/resolucao.css">
         <link rel="stylesheet" type="text/css" href="style/barra.css">
+        <link rel="stylesheet" type="text/css" href="style/resolucao.css">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
     </head>
     <body>

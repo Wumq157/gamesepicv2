@@ -1,30 +1,239 @@
-/* Estilos para telas de celular */
-@media screen and (max-width: 767px) {
-    header h1 {
-      font-size: 24px;
-    }
-  
-    main h2 {
-      font-size: 20px;
-    }
-  
-    main ul, main a {
-      font-size: 16px;
-    }
+/* Estilos para resolução 1920x1080 */
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 16px;
   }
   
-  /* Estilos para telas de desktop */
-  @media screen and (min-width: 768px) {
-    header h1 {
-      font-size: 36px;
-    }
-  
-    main h2 {
-      font-size: 24px;
-    }
-  
-    main ul, main a{
-      font-size: 18px;
-    }
+  header h1 {
+    font-size: 36px;
   }
   
+  header a,
+  header p {
+    font-size: 16px;
+  }
+  
+  header h2,
+  header h3 {
+    font-size: 24px;
+  }
+  
+  main h1 {
+    font-size: 48px;
+  }
+  
+  main a,
+  main p {
+    font-size: 16px;
+  }
+  
+  main h2,
+  main h3 {
+    font-size: 28px;
+  }
+  
+  main a.btn,
+  #perfil {
+    font-size: 20px;
+  }
+}
+
+/* Estilos para resolução 1366x768 */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  body {
+    font-size: 14px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+  }
+  
+  header a,
+  header p {
+    font-size: 14px;
+  }
+  
+  header h2,
+  header h3 {
+    font-size: 22px;
+  }
+  
+  main h1 {
+    font-size: 40px;
+  }
+  
+  main a,
+  main p {
+    font-size: 14px;
+  }
+  
+  main h2,
+  main h3 {
+    font-size: 24px;
+  }
+  
+  main a.btn,
+  #perfil {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para resolução 1080 */
+@media screen and (min-width: 1080px) and (max-width: 1365px) {
+  body {
+    font-size: 12px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  header a,
+  header p {
+    font-size: 12px;
+  }
+  
+  header h2,
+  header h3 {
+    font-size: 18px;
+  }
+  
+  main h1 {
+    font-size: 36px;
+  }
+  
+  main a,
+  main p {
+    font-size: 12px;
+  }
+  
+  main h2,
+  main h3 {
+    font-size: 20px;
+  }
+  
+  main a.btn,
+  #perfil {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para resolução 720 */
+@media screen and (min-width: 720px) and (max-width: 1079px) {
+  body {
+    font-size: 10px;
+  }
+  
+  header h1 {
+    font-size: 20px;
+  }
+  
+  header a,
+  header p {
+    font-size: 10px;
+  }
+  
+  header h2,
+  header h3 {
+    font-size: 16px;
+  }
+  
+  main h1 {
+    font-size: 32px;
+  }
+  
+  main a,
+  main p {
+    font-size: 10px;
+  }
+  
+  main h2,
+  main h3 {
+    font-size: 18px;
+  }
+  
+  main a.btn,
+  #perfil {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para resolução 420 */
+@media screen and (min-width: 420px) and (max-width: 719px) {
+  body {
+    font-size: 8px;
+  }
+  
+  header h1 {
+    font-size: 16px;
+  }
+  
+  header a,
+  header p {
+    font-size: 8px;
+  }
+  
+  header h2,
+  header h3 {
+    font-size: 14px;
+  }
+  
+  main h1 {
+    font-size: 28px;
+  }
+  
+  main a,
+  main p {
+    font-size: 8px;
+  }
+  
+  main h2,
+  main h3 {
+    font-size: 16px;
+  }
+  
+  main a.btn,
+  #perfil {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para resolução 380 */
+@media screen and (max-width: 419px) {
+  body {
+    font-size: 6px;
+  }
+  
+  header h1 {
+    font-size: 14px;
+  }
+  
+  header a,
+  header p {
+    font-size: 6px;
+  }
+  
+  header h2,
+  header h3 {
+    font-size: 12px;
+  }
+  
+  main h1 {
+    font-size: 24px;
+  }
+  
+  main a,
+  main p {
+    font-size: 6px;
+  }
+  
+  main h2,
+  main h3 {
+    font-size: 14px;
+  }
+  
+  main a.btn,
+  #perfil {
+    font-size: 10px;
+  }
+}
