@@ -137,3 +137,6 @@ button:hover span:not(:nth-child(6)) {
   font-size: 30px;
   margin-top: 10px;
 }
+.btn2 {
+  color: #171717;
+}
