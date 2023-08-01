@@ -1,0 +1,12 @@
+:root {
+    --escurecer: rgba(0, 0, 0, 0.7);;
+    --branco: #fff;
+    --preto: #000;
+    --cinza-escuro: rgb(17, 17, 17);
+    --cinza-medio: rgb(17, 24, 39);
+    --cinza: rgb(51, 51, 51);
+    --transição-ciza-azul-claro: linear-gradient(rgb(51, 51, 51), rgb(90, 136, 185));
+
+  }
+
+  
