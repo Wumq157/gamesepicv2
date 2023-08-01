@@ -1,0 +1,13 @@
+.container {
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+  p {
+    text-align: left;
+  }
+  

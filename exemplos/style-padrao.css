@@ -1,0 +1,356 @@
+/* Corpo da pagina*/
+body {
+    background-color: rgb(51, 51, 51);
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    max-height: 1px;
+  }
+  
+  header {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header .div1 {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  header .div1 button {
+    margin: 20px;
+  }
+  
+  header img {
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  header a,
+  header p,
+  header h1,
+  header h2,
+  header h3,
+  header h4,
+  header h5,
+  header h6,
+  header li {
+    color: #fff;
+  }
+  
+  header div {
+    width: 33%;
+    display: inline;
+  }
+  
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  header li {
+    margin: 1%;
+    flex: 1 0 auto;
+  }
+  
+  .sHeader {
+    display: flex;
+    flex-direction: column;
+    /* Adicione essa linha */
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    padding-left: 10%;
+  }
+  
+  .sHeader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  .sHeader h2,
+  .sHeader p {
+    display: block;
+    text-align: left;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .sHeader h2 {
+    margin: 10px;
+    font-size: 60px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .sHeader p {
+    font-size: 30px;
+    margin: 10px;
+  }
+  
+  
+  main {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+    
+  }
+  
+  main a,
+  main p,
+  main h1,
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6,
+  main li {
+    color: #fff;
+  }
+  
+  .sMain {
+    background-color: rgb(34, 34, 34);
+  }
+  
+  .contato {
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    border-style: none;
+  }
+  
+  .mapa {
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    border-style: none;
+    background: linear-gradient(rgb(51, 51, 51), rgb(90, 136, 185));
+  }
+  
+  .mapa iframe {
+    width: 85%;
+    height: 50%;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(61, 61, 61);
+  }
+  
+  
+  
+  .mapa iframe {
+    width: 85%;
+    height: 50%;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(61, 61, 61);
+  }
+  
+  footer {
+    max-height: 100px;
+    padding: 15px;
+    background-color: rgb(90, 136, 185);
+    color: rgb(17, 24, 39);
+    padding: 50px;
+    display: flex;
+  }
+  
+  footer a,
+  footer p,
+  footer h1,
+  footer h2,
+  footer h3,
+  footer h4,
+  footer h5,
+  footer h6 {
+    color: #000000;
+  }
+  
+  .fTitulo {
+    width: 30%;
+  }
+  
+  .fConteudo {
+    width: 70%;
+  }
+  
+  .fConteudo ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .fConteudo li {
+    margin: 15px;
+    flex: 1 0 auto;
+  }
+  
+  /*Botão btn*/
+  .btn:before {
+      content: "★";
+  }
+  .btn {
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  
+  .btn:focus:after,
+  .btn:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .btn:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+  
+  /*Botão btn2*/
+  .btn2 {
+    font-size: 12px;
+    position: relative;
+    margin: auto;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    background: #fff;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+   }
+   
+   .btn2:active {
+    transform: scale(0.95);
+   }
+   
+   .btn2 span {
+    color: #464646;
+   }
+   
+   .btn2 .border {
+    position: absolute;
+    border: 0.15em solid #fff;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 9em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+   }
+   
+   .btn2:hover .border {
+    display: block;
+    width: 9.9em;
+    height: 3.7em;
+   }
+   
+   .btn2{
+    border-radius: 2em;
+   }
+  
+  /*Botão btn3*/
+  .btn3-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a.btn3 {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #000;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in;
+    margin-bottom: 100px;
+  }
+  
+  a.btn3:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    transition: all 0.2s ease-out;
+  }
+  
+  a.btn3:hover::before {
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  a.btn3::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  a.btn3:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in;
+  }
