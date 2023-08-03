@@ -120,6 +120,19 @@ main {
   overflow: hidden;
   
 }
+main .container {
+  margin: 20px;
+  overflow: hidden;
+}
+
+main img {
+  float: left;
+  margin-right: 20px;
+}
+main p {
+  text-align: left;
+}
+
 
 main a,
 main p,
