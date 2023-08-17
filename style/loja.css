@@ -20,7 +20,7 @@ main {
     display: inline-block;
     text-align: center;
     width: 30%;
-    height: 545px;
+    height: auto;
     vertical-align: top;
     margin: 2px 1%;
     padding: 30px 15px;
